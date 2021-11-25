@@ -1,0 +1,41 @@
+//layout of textfile
+// line (1): '***' - indicates new grammar
+// line (2): Input string
+// line(3): Variable set
+// line(4): Terminal set
+// line(5): Starting character S
+// line (6 and onwards): Production rules (eg. S->aAB) - one on each line
+//NOTE: do not remove 'end' from last line of file 
+***
+aabbb
+S, A, B
+a,b
+S 
+S -> aAB 
+A-> a A B | b 
+B-> b
+***
+{ixtx=y+zeixtx=y+zdd}
+S,R,L,C,A,Y,P,Z,X,T,D
+{,},x,=,y,+,z,i,t,e,d
+S
+S -> {LR
+R -> }
+L -> xAYPZ | iXTLC
+C -> d | eLD
+A -> =
+Y -> y
+P -> +
+Z -> z
+X -> x
+T -> t
+D -> d
+***
+abb
+S,A,B
+a,b
+S
+S->aA
+A->bB
+B->b
+end
